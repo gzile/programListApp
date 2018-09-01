@@ -1,0 +1,29 @@
+export class Program {
+    id: string;
+    url: string;
+    status: string;
+    budget: string;
+    actuals: string;
+    difference: string;
+    level1_uuid: string;
+    unique_id: string;
+    name: string;
+    funding_status: string;
+    cost_center: string;
+    description: string;
+    public_dashboard: boolean;
+    start_date: Date;
+    end_date: Date;
+    create_date: Date;
+    edit_date?: Date;
+    sort: number;
+    organization: string;
+    portfolio: string;
+    fund_code: any;
+    award: any;
+    sector: any;
+    sub_sector: any;
+    country: any;
+    milestone: any;
+    user_access: any;
+}

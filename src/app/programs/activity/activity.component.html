@@ -1,0 +1,32 @@
+<main>
+  <div class="jumbotron">
+    <h1>Activitiy Dashboard</h1>
+  </div>
+
+  <div>
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Progress</th>
+          <th>Assigned</th>
+          <th>Start Date</th>
+          <th>Budget</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of activities">
+          <td>{{ item.name }}</td>
+          <td>{{ item.progress }}</td>
+          <td>{{ item.assigned }}</td>
+          <td>{{ item.start_date }}</td>
+          <td>{{ item.budget }}</td>
+          <td>{{ item.status }}</td>
+          <td><button class="btn btn-danger" type="button">delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>

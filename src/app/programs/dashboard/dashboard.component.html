@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h1>Programs Dashboard</h1>
+</div>
+
+<div>
+  <table class="table text-left">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Sector</th>
+        <th>Budget vs Actuals</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of programs">
+        <td>{{ item.name}}</td>
+        <td>{{ item.sector}}</td>
+        <td>{{ item.budget}} / {{item.actuals}}</td>
+        <td>{{ item.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
